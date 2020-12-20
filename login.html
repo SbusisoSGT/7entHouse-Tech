@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | 7entHouse Tech </title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap/bootstrap.css">-->
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="h1 login">Login</h1>
+            <form action="" method="POST">
+                <!--<label>Email</label>--><br/>
+                <i class="fa fa-user"></i><input type="email" name="email" class="input" autocomplete="off" placeholder="Email" required><br/><br/>
+
+                <!-- <label>Password</label> --><br/>
+                <i class="fa fa-lock"></i><input type="password" name="passwrd" class="input" placeholder="Password" required><br/><br/>
+
+                <input type="submit" name="login" value="Login" class="submit"><br/><br/><br/>
+                <a href="register.html" id="rgst">Register Here</a>
+                <a href="forgot.html" id="fgt">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        color: #FFFFFF;
+        background-image: url("images/background/notebook-1280538_1920.jpg")
+    }
+
+    .login{
+        margin-left: 20px;
+    }
+
+    #rgst{
+        font-size: 0.8em;
+        float: left;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #fgt{
+        font-size: 0.8em;
+        float: right;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    #rgst:hover, #fgt:hover{
+        color: #5FA8D3;
+        text-decoration: none;
+    }
+
+    #fgt{
+        margin-right: 43px;
+    }
+    .input{
+        width: 290px;
+        height: 25px;
+        border: none;
+        border: 0; 
+        background: transparent;
+        border-bottom: 1px solid #FFFFFF;
+        outline: none;
+        overflow: hidden;
+        color: #FFFFFF;
+        padding-left: 25px;
+        margin: 0;
+    }
+
+    .input::placeholder{
+        color: #FFFFFF;
+    }
+    .input:hover{
+        outline: none;
+        border-bottom: 2px solid #5FA8D3;
+    }
+    .input:focus, .input:valid{
+        border-bottom: 2px solid #5FA8D3;
+    }
+    .input:focus, .input:valid{
+        border-bottom: 2px solid #5FA8D3;
+    }
+    .submit{
+        /* margin-left: 3px; */
+        height: 35px;
+        width: 337px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #5FA8D3;
+        background-color: #5FA8D3;
+        color: #FFFFFF;
+        font-size: 17px;
+    }
+    .submit:hover{
+        background-color: #505050;
+        border-bottom: 2px solid #5FA8D3;
+        cursor: pointer;
+    }
+
+    .content{
+        font-size: 1.2em;
+        border: 1px solid #FFFFFF;
+        width: 376px;
+        height: 100%;
+        margin: auto;
+        padding-left: 40px;
+        /*margin-top: 186px;*/
+        margin: 186px 0px 0px 0px;
+        margin-left: 80px;
+        height: 400px;
+    }
+    .fa{
+        transform: translateX(15px);
+    }
+
+    @media (min-width: 1500px) { 
+        #fgt{
+            margin-right: 33px;
+        }
+
+        .content{
+            width: 500px;
+        }
+
+        .submit{
+            width: 461px;
+        }
+
+        .input{
+            width: 414px;
+        }
+     }
+
+     @media (max-width: 575.98px) { 
+        .content{
+            margin-left: 35px;
+            width: 500px;
+        }
+      }
+</style>

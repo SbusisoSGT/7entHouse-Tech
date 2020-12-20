@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login | 7entHouse Tech </title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap/bootstrap.css">-->
+</head>
+<body>
+    <div class="container">
+        <div class="cont-1">
+            <img src="images/notebook-1280538_1920.jpg">
+        </div>
+        <div class="cont-2">
+            <h1 class="h1">Login</h1>
+            <form action="" method="POST">
+                <!--<label>Email</label>--><br/>
+                <i class="fa fa-user"></i><input type="email" name="email" class="input" autocomplete="off" placeholder="Email" required><br/><br/>
+
+                <!-- <label>Password</label> --><br/>
+                <i class="fa fa-key"></i><input type="password" name="passwrd" class="input" placeholder="Password" required><br/><br/>
+
+                <input type="submit" name="login" value="Login" class="submit"><br/><br/><br/>
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+    }
+
+    .input{
+        width: 55%;
+        height: 25px;
+        border: none;
+        /* border: 2px solid #FFFFFF; */
+        border-bottom: 2px solid #505050;
+        outline: none;
+        overflow: hidden;
+        padding-left: 25px;
+        margin: 0;
+    }
+    .input:hover{
+        /* background-color: #F0F0F0; */
+        outline: none;
+        border-bottom: 2px solid #5fa8d3;
+    }
+    .input:focus, .input:valid{
+        border-bottom: 2px solid #5fa8d3;
+    }
+    .submit{
+        margin-top: 20px;
+        /* margin-left: 3px; */
+        height: 27px;
+        width: 70%;
+        border: none;
+        outline: none;
+        /*border: 2px solid #505050;
+        background-color: #fff;*/
+        background-color: #505050;
+        border-bottom: 2px solid #5fa8d3;
+        color: #FFFFFF;
+        font-size: 17px;
+    }
+    .submit:hover{
+        background-color: #5fa8d3;
+        border-bottom: 2px solid #5fa8d3;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .cont-1{
+        /*border: 1px solid #101010;*/
+        width: 64%;
+        height: 666px;
+        float: left;
+    }
+
+    .cont-1 img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .cont-2{
+        font-size: 1.2em;
+        /*border: 1px solid #101010;*/
+        width: 32%;
+        height: 100%;
+        float: right;
+        padding: 186px 0px 0px 40px;
+    }
+    .fa{
+        transform: translateX(15px);
+    }
+</style>
