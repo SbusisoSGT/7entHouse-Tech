@@ -1,0 +1,246 @@
+
+    .logo{
+        font-family: Merienda, cursive;
+        float: left;
+        text-decoration: none;
+        font-weight: 20px;
+        font-size: 40px;
+        padding-left: 15px;
+    }
+
+    .navbar{
+        overflow: hidden;
+        width: 100%;
+        height: 75px;
+        border-bottom: 1px solid #646464;
+        margin: 0;
+        
+    }
+
+    #nav-contact{
+        background-color: #337AB7;
+        color: #FFF;
+        border: 1px solid #337AB7;
+        height: 40px;
+        width: 70px;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    a:hover{
+        text-decoration: none !important;
+    }
+
+   #active{
+        /* border-bottom: 2.5px solid #0000FF; */
+    }
+
+    .links{
+        text-decoration: none;
+        float: right;
+        list-style: none;
+        padding-right: 20px;
+    }
+
+    .links li{
+        float: left;
+        padding-left: 20px;
+        padding-top: 28px;
+        font-size: 1.3em;
+    }
+
+    .links li a:hover{
+        /* border-bottom: 2.5px solid #0000FF; */
+    }
+
+    .slider{
+        text-align: center;
+        color: #FFF;
+        width: 100%;
+        height: 600px;
+        background: url("../images/background/photo-1517694712202-14dd9538aa97.jpeg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        clear:both;
+    }
+
+    .color-overlay{
+        background:#337AB7;
+        opacity: 0.6;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #header{
+        z-index: 1;
+        font-size: 60px; 
+    }
+
+    #perfect{
+        font-size: 130px;
+        font-weight: bold;
+        font-family: Kalam;
+        /*font-family: Merienda,cursive;*/
+        color: #FFF;
+        margin-top: 40px;
+        
+    }
+
+    #down{
+        font-size: 90px;
+        color: #FFF;
+        transform: translate(-300px,260px);
+    }
+
+    .services{
+        min-height: 680px;
+        transition: all 1s ease-in-out;
+        padding-bottom: 60px;
+    }
+
+    .our-services{
+        font-family: Courgette;
+        font-size: 50px;
+        color: #000;
+        text-justify: center;
+        padding-top: 30px;
+    }
+
+    .services h1, h4{
+        text-align: center;
+        color: #1E1E1E;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .digital, .web-design, .graphic{
+        margin-top: 60px;
+        width: 275px;
+        height: 380px;
+        border: 1px solid #000;
+        box-shadow: 8px 10px 18px #9B9B9B;
+        background-color: #F3F3F3;
+    }
+    
+    .graphic h1, .web-design h1, .digital h1{
+        font-size: 25px;
+    }
+
+    .graphic ul li, .web-design ul li, .digital ul li{
+
+    }
+    
+    .web-design img, .graphic img{
+        height: 110px;
+        width: 180px;
+        padding-left: 90px;
+        padding-top: 20px
+    }
+    
+    .digital img{
+        height: 120px;
+        width: 190px;
+        padding-left: 75px;
+        padding-top: 10px
+    }
+
+    .about{
+        width: 100%;
+        height: 400px;
+        background: #F0F0F0;
+    }
+    .about h1{
+        text-align: center;
+    }
+
+    .contact{
+        /*background: url("images/background/home-office-336373_1920.jpg");
+        background-size: cover;*/
+        height: 700px;
+        width: 100%;
+        color: #000;
+        background: #FFF;
+        padding-top: 40px;
+        border: 1px solid #000;
+    }
+
+    .form{
+        margin: auto;
+        width: 35%;
+        height: 500px;
+        z-index: 2;
+    }
+    
+    .form textarea{
+        height: 120px;
+
+    }
+
+
+    .input{
+        border: 1px solid #000;
+        background: transparent;
+    }
+    
+    .contact h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .footer{
+        background: #001a33;
+        height: 200px;
+    }
+
+     
+
+    @media (min-width: 575.98px) and (max-width: 990px) {
+        .graphic, .web-design, .digital{
+            clear: right;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .row{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .form{
+            width: 35%;
+        }
+
+    }
+
+    @media (max-width: 575.98px){
+        .graphic, .web-design, .digital{
+            clear: right;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .row{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .contact h1{
+            font-size: 30px;
+        }
+
+        .form{
+        width: 50%;
+        
+        }
+        
+        .form textarea{
+        height: 90px;
+
+        }
+
+    }

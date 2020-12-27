@@ -1,17 +1,34 @@
 <!DOCTYPE html>
+<!--
+	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+	
+		 ________            __    __  __                                      ______               __
+		/\_____  \          /\ \__/\ \/\ \                                    /\__  _\             /\ \
+		\/___//'/' __    ___\ \ ,_\ \ \_\ \    ___   __  __    ____     __    \/_/\ \/    __    ___\ \ \___
+			/' /'/'__`\/' _ `\ \ \/\ \  _  \  / __`\/\ \/\ \  /',__\  /'__`\     \ \ \  /'__`\ /'___\ \  _ `\
+		  /' /' /\  __//\ \/\ \ \ \_\ \ \ \ \/\ \L\ \ \ \_\ \/\__, `\/\  __/      \ \ \/\  __//\ \__/\ \ \ \ \
+		 /\_/   \ \____\ \_\ \_\ \__\\ \_\ \_\ \____/\ \____/\/\____/\ \____\      \ \_\ \____\ \____\\ \_\ \_\
+		 \//     \/____/\/_/\/_/\/__/ \/_/\/_/\/___/  \/___/  \/___/  \/____/       \/_/\/____/\/____/ \/_/\/_/
+
+	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+	
+	#	Author: 7entHouse Tech PTY(LTD)
+	#	About: A House of Perfect Tech Solutions
+	#	Website: www.7enthousetech.co.za
+	#	Email: info@7enthousetech.co.za
+	
+	-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+-->
 <html>
 <head>
         <title>7entHouse Tech | Home </title>
-        <meta name="author" content="SGT | PRO4 | MK">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/index.css" link="stylesheet">
-        <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+        <meta name="author" content="7entHouse Tech">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="public/css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kalam:wght@300&family=Merienda&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Kalam" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
 
 </head>
 <body>
@@ -20,8 +37,8 @@
             <h1 class="logo"><a href="index.html" title="7entHouse Tech">7entHouse Tech</a></h1>
             <ul class="links">
                 <li><a id="active" href="index.html">HOME</a></li>
-                <li><a href="#services">SERVICES</a></li>
                 <li><a href="about-us.html">WHO WE ARE</a></li>
+                <li><a href="#services">OUR PRODUCTS</a></li>
                 <li><a href="login.html">LOGIN</a></li>
                 <li><a id="nav-contact" href="#contact">CONTACT US</a></li>
             </ul>
@@ -38,7 +55,7 @@
              
             <div class="row">
              <div class="digital">
-                 <img src="images/icons/Social_media_marketing.png">
+                 <img src="public/images/icons/Social_media_marketing.png">
                 <h1>Digital Marketing</h1><br/>
                 <ul>
                     <li>Social Media Setup</li><br/>
@@ -47,7 +64,7 @@
                 </ul>
             </div>
             <div class="web-design">
-                <img src="images/icons/web_development.png">
+                <img src="public/images/icons/web_development.png">
                 <h1>Web Development</h1><br/>
                 <ul>
                     <li>Web Design</li><br/>
@@ -56,7 +73,7 @@
                 </ul>
             </div>
             <div class="graphic">
-                <img src="images/icons/graphic_design.png">
+                <img src="public/images/icons/graphic_design.png">
                 <h1>Graphic Design</h1><br/>
                 <ul>
                     <li>Logo Design</li><br/>
@@ -76,12 +93,10 @@
             <h1>Get in Touch With Us</h1>
             <div class="form">
                 <form action="" method="POST"><br/><br/>
-                    <label>First Name</label>
+                    <label>Full Name</label>
                         <input type="text" name="first" class="form-control input" required><br/>
                     <label>Email</label>
                         <input type="email" name="email" class="form-control input" required><br/>
-                    <label>Project Type</label>
-                        <input type="text" name="last" class="form-control input" required><br/>
                     <label>Message</label>
                         <textarea name="message" class="form-control input" placeholder="Tell us about your project" required></textarea><br/>
                     <br/>
@@ -94,262 +109,6 @@
         </footer>
 
     </div>
-        
-
-
     </div>
 </body>
 </html>
-<script>
-    $("button").click(function(){
-  $("div").animate({left: '250px'});
-});
-</script>
-<style>
-
-    .logo{
-        font-family: Merienda, cursive;
-        float: left;
-        text-decoration: none;
-        font-weight: 20px;
-        font-size: 40px;
-        padding-left: 15px;
-    }
-
-    .navbar{
-        overflow: hidden;
-        width: 100%;
-        height: 75px;
-        border-bottom: 1px solid #646464;
-        margin: 0;
-        
-    }
-
-    #nav-contact{
-        background-color: #337AB7;
-        color: #FFF;
-        border: 1px solid #337AB7;
-        height: 40px;
-        width: 70px;
-        border-radius: 8px;
-        font-size: 1em;
-    }
-
-    a:hover{
-        text-decoration: none;
-    }
-
-   #active{
-        border-bottom: 2.5px solid #0000FF;
-        
-    }
-    .links{
-        text-decoration: none;
-        float: right;
-        list-style: none;
-        padding-right: 20px;
-    }
-
-    .links li{
-        float: left;
-        padding-left: 20px;
-        padding-top: 28px;
-        font-size: 1.3em;
-    }
-
-    .links li a:hover{
-        border-bottom: 2.5px solid #0000FF;
-    }
-
-    .slider{
-        text-align: center;
-        color: #FFF;
-        width: 100%;
-        height: 600px;
-        background: url("images/background/photo-1517694712202-14dd9538aa97.jpeg");
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        clear:both;
-    }
-
-    .color-overlay{
-        background:#337AB7;
-        opacity: 0.6;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    #header{
-        z-index: 1;
-        font-size: 60px; 
-    }
-
-    #perfect{
-        font-size: 130px;
-        font-weight: bold;
-        font-family: Kalam;
-        /*font-family: Merienda,cursive;*/
-        color: #FFF;
-        margin-top: 40px;
-        
-    }
-
-    #down{
-        font-size: 90px;
-        color: #FFF;
-        transform: translate(-300px,260px);
-    }
-
-    .services{
-        min-height: 680px;
-        transition: all 1s ease-in-out;
-        padding-bottom: 60px;
-    }
-
-    .our-services{
-        font-family: Courgette;
-        font-size: 50px;
-        color: #000;
-        text-justify: center;
-        padding-top: 30px;
-    }
-
-    .services h1, h4{
-        text-align: center;
-        color: #1E1E1E;
-    }
-    .row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .digital, .web-design, .graphic{
-        margin-top: 60px;
-        width: 275px;
-        height: 380px;
-        border: 1px solid #000;
-        box-shadow: 8px 10px 18px #9B9B9B;
-        background-color: #F3F3F3;
-    }
-    
-    .graphic h1, .web-design h1, .digital h1{
-        font-size: 25px;
-    }
-
-    .graphic ul li, .web-design ul li, .digital ul li{
-
-    }
-    
-    .web-design img, .graphic img{
-        height: 110px;
-        width: 180px;
-        padding-left: 90px;
-        padding-top: 20px
-    }
-    
-    .digital img{
-        height: 120px;
-        width: 190px;
-        padding-left: 75px;
-        padding-top: 10px
-    }
-
-    .about{
-        width: 100%;
-        height: 400px;
-        background: #F0F0F0;
-    }
-    .about h1{
-        text-align: center;
-    }
-
-    .contact{
-        /*background: url("images/background/home-office-336373_1920.jpg");
-        background-size: cover;*/
-        height: 700px;
-        width: 100%;
-        color: #000;
-        background: #FFF;
-        padding-top: 40px;
-        border: 1px solid #000;
-    }
-
-    .form{
-        margin: auto;
-        width: 35%;
-        height: 500px;
-        z-index: 2;
-    }
-    
-    .form textarea{
-        height: 120px;
-
-    }
-
-
-    .input{
-        border: 1px solid #000;
-        background: transparent;
-    }
-    
-    .contact h1{
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .footer{
-        background: #001a33;
-        height: 200px;
-    }
-
-     
-
-    @media (min-width: 575.98px) and (max-width: 990px) {
-        .graphic, .web-design, .digital{
-            clear: right;
-            display: flex;
-            flex-flow: column nowrap;
-        }
-        .row{
-            display: flex;
-            flex-flow: column nowrap;
-        }
-
-        .form{
-            width: 35%;
-        }
-
-    }
-
-    @media (max-width: 575.98px){
-        .graphic, .web-design, .digital{
-            clear: right;
-            display: flex;
-            flex-flow: column nowrap;
-        }
-        .row{
-            display: flex;
-            flex-flow: column nowrap;
-        }
-        .contact h1{
-            font-size: 30px;
-        }
-
-        .form{
-        width: 50%;
-        
-        }
-        
-        .form textarea{
-        height: 90px;
-
-        }
-
-    }
-</style>
